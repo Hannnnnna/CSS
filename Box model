@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .box1{
+        width:400px;
+        height:200px;
+        background:orange;
+      }
+      .box2{
+        width:50%;
+        height:300px;
+        background:blue;
+      }
+    .cactus{
+      display: inline;
+    }
+
+    div{
+      width:100px;
+      height:100px;
+      margin:30px;
+      display:inline-block;
+    }
+
+        .box4{
+              background-color:red;
+              border-style:solid;
+              border-color:pink;
+              border-top-left-radius:20px 70px;
+              border-bottom-right-radius:20px 70px;
+            }
+        .box5{
+              background-color:red;
+              border-style:dotted;
+              border-color:pink;
+              border-radius: 20px 70px 20px 70px;
+            }
+        .box6{
+              background-color:red;
+              border-style:dashed;
+              border-color:pink;
+            }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="box1"></div>
+      <div class="box2"></div>
+<br>
+    <div class="cactus">
+      <img src="cactus.jpg" width="100px">
+      <img src="cactus.jpg" width="100px">
+      <img src="cactus.jpg" width="100px">
+    </div>
+
+<br>
+<div style="background:green"></div>
+<div style="background:yellow"></div>
+<div style="background:blue"></div>
+<br>
+<div class="box4"></div>
+<div class="box5"></div>
+<div class="box6"></div>
+
+  </body>
+</html>
