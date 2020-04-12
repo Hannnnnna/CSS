@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div{
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+        background: red;
+      }
+      .container{
+        background: yellow;
+        left:20px;
+        top: 20px;
+        position: relative;
+      }
+      .box{
+        background: blue;
+        left:20px;
+        top: 20px;
+        position: sticky;
+      }
+    </style>
+  </head>
+  <body>
+<!--포지션은 기본값으로 static을 가지고 있는데, html에 정의된 순서대로 브라우저상에 자연스럽게 보여지는 것-->
+<!--static 기본 값일떄는 left top 같은 값들이 의미가 없고 원래 DOM순서에 맞에 있어야 하는 자리에 배치되어져 있음-->
+<!--relative는 원래 있어야하는 자리에서 옮겨가는 것/ 파란색 상자가 원래 있던 공간은 유지되면서 옮겨감-->
+<!--absoltue는 내 아이템이 담겨있는 내 아이템과 가장 가까이에있는 박스안에서 위치변경이 일어남/ 원래 자리에서 쏘옥 빠져나오기 때문에 밑에 있던 빨간색 박스가 파란박스 자리로 올라감-->
+<!--fixed는 상자에서 완전히 벗어나서 윈도우 안에서 움직이는 것-->
+<!--sticky 원래 있어야하는 자리에 있으면서 스크롤 되어도 붙어있는 것-->
+
+<!--fixed는 원래 있어야하는 자리는 무시하고 윈도우 기준으로 배치해야 할때 쓰고 sticky는 원래 있던 자리를 유지 하면서 스크롤시 고정해줄 수 있는 것-->
+
+<!--div Block Level-->
+<!--span Inline Level-->
+<article class="container">
+    <div></div>
+    <div class="box">I'm a box</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    </article>
+  </body>
+</html>
