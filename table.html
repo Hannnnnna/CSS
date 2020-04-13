@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+     table, th, td{
+        border: 1px solid red;
+      }
+      th, td{
+        padding:10px;
+      }
+      table2{
+        border: 1px solid red;
+      }
+      thead, tfoot{
+        background-color:pink;
+      }
+    </style>
+  </head>
+  <body>
+<!--표 제목은 caption 태그를 이용해 캡션으로 표시-->
+
+  <table class="table1">
+    <caption>
+      <strong>TABLE</strong>
+      <p><strong>caption</strong>으로 제목 달기</p>
+    </caption>
+<!--table 안에 caption 태그 넣어줘야햠. 중앙 정렬.-->
+    <tr>
+      <th>A</th>
+      <td colspan="2">APPLE ALIGN ANGEL ABLE</td>
+    </tr>
+    <tr>
+      <th>B</th>
+      <td rowspan="2">BROWN BOBBIES BOB BOY</td>
+      <td>BONUS BOIL BOWL</td>
+    </tr>
+    <tr>
+        <th>C</th>
+        <td>CRAZY CUTE CAMERON</td>
+        </tr>
+  </table>
+
+<figure>
+  <figcaption>
+    <p><strong>figure-figcaption</strong> 이용해서 제목달기</p>
+    <table class="table1">
+      <tr>
+        <th>A</th>
+        <td colspan="2">APPLE ALIGN ANGEL ABLE</td>
+      </tr>
+      <tr>
+        <th>B</th>
+        <td rowspan="2">BROWN BOBBIES BOB BOY</td>
+        <td>BONUS BOIL BOWL</td>
+      </tr>
+      <tr>
+          <th>C</th>
+          <td>CRAZY CUTE CAMERON</td>
+          </tr>
+    </table>
+  </figcaption>
+</figure>
+
+<!--thead tbody tfoot-->
+<table class="table2">
+  <caption><strong>EARTH</strong></caption>
+  <thead>
+    <tr>
+    <th>HUMAN</th>
+    <th>HUMAN</th>
+    <th>HUMAN</th>
+    <th>HUMAN</th>
+    <th>HUMAN</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CREATURE</td>
+      <td>CREATURE</td>
+      <td>CREATURE</td>
+      <td>CREATURE</td>
+      <td>CREATURE</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>NATURE</td>
+      <td>NATURE</td>
+      <td>NATURE</td>
+      <td>NATURE</td>
+      <td>NATURE</td>
+    </tr>
+  </tfoot>
+</table>
+
+
+
+
+  </body>
+</html>
