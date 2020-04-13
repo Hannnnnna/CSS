@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+      div#wrapper {
+				position: relative;
+			}
+      .box{
+        position: absolute;
+        width:100px;
+        height:100px;
+        margin-bottom:20px;
+      }
+     #b1{
+        left:100px;
+        top:30px;
+        background:pink;
+        z-index:3;
+      }
+      #b2{
+         left:70px;
+         top:80px;
+         background:yellow;
+         z-index:2;
+       }
+       #b3{
+          left:50px;
+          top:50px;
+          background:lightgreen;
+          z-index:1;
+        }
+    </style>
+  </head>
+  <body>
+<!--z-index:<숫자> 한 요소 위에 다른 요소를 쌓을 떄 '쌓는 순서를 지정하는 것'-->
+  <div id="wrapper">
+    <div class="box" id="b1">1</div>
+    <div class="box" id="b2">2</div>
+    <div class="box" id="b3">3</div>
+  </div>
+  </body>
+</html>
