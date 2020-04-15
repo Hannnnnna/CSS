@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    .columns{
+      column-count: 2;
+      column-gap: normal;
+      column-rule: red 5px dotted;
+    }
+    #content{
+      float: left;
+      break-after: region;
+    }
+    #sidebar1{
+     float: left;
+   }
+    #footer{
+      clear:both;
+    }
+    hr{
+      border: 5px dotted;
+      margin-right: 0;
+    }
+    </style>
+  </head>
+  <body>
+
+<div class="columns">
+
+  <h2>header</h2>
+    머릿말에 해당
+
+  <h2>nav</h2>
+    문서를 연결하는 네비게이션 링크 모음. 어누 부분이 네비게이션인지 쉽게 알 수 있음
+    사용하는 위치의 영향을 받지 않아서 header나 footer 또는 aide 태그 안에 포함시킬 수도 있고 독립해 사용도 가능
+
+  <h2>section</h2>
+  주제별 콘텐츠 영역 나타내기
+
+  <h2>footer</h2>
+  제작 정보와 저작권 정보 표시하기
+
+  <h2>adress</h2>
+  사이트 제작자 정보, 연락처 정보 나타내기
+
+
+<div id="content">
+  <hr color="red">
+  <article class="content">
+    <section>
+      <h2>What We Know About The Silent Spreaders Of COVID-19</h2>
+      <p>Is it possible to be infected with the coronavirus and show no symptoms? Or go through a period of several days before symptoms kick in?</p>
+
+      <p>And even in this stage with no cough, no fever, no sign of illness, could you be transmitting the virus to others?</p>
+
+      <p>"There is evidence that SARS-CoV-2 has this ability to spread silently," says Shweta Bansal, an infectious disease modeler at Georgetown University.
+      </p>
+
+      <p>Indeed, cases of COVID-19 among nursing home residents, choir groups and families fuel a growing concern about people who are infected, yet feel generally OK and go about their daily lives, giving the virus to friends, family members and strangers without knowing that they themselves have it.</p>
+    </section>
+  </article>
+</div>
+
+<div id="sidebar1">
+  <aside class="sidebar">
+    <img src="covid.gif" width="600x" height="300px;">
+    <h2><strong>What we don't yet know</strong></h2>
+  </aside>
+</div>
+</div>
+
+<div id="footer">
+  <footer>
+    <i><p>NPR NEWS</p>
+    <p>https://www.npr.org/sections/goatsandsoda/2020/04/13/831883560/can-a-coronavirus-patient-who-isnt-showing-symptoms-infect-others?refresh=true</p></i>
+  </footer>
+</div>
+
+  </body>
+</html>

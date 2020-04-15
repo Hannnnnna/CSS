@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+ <link rel="stylesheet" href="style.css">
+
+    <style>
+      *{
+        margin: 0;
+        padding:0;
+      }
+
+      .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 40px 70px 100px 1fr;
+        grid-template-areas:
+        "title title"
+        "header header"
+        "sidebar content"
+        "footer footer";
+        grid-gap:10px;
+      }
+
+      .title{
+        grid-area: title;
+      }
+      .header{
+        grid-area: header;
+      }
+      .sidebar{
+        grid-area: sidebar;
+      }
+      .title{
+        grid-area: title;
+      }
+      .content{
+        grid-area: content;
+      }
+        .footer{
+          grid-area: footer;
+        }
+
+
+      .grid div:nth-child(even){
+        background-color:red;
+      }
+      .grid div:nth-child(odd){
+        background-color:green;
+      }
+
+      @media screen and (min-width: 736px)
+      {
+        .grid{
+          display: grid;
+          grid-template-columns: 1fr 500px 500px 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+          grid-template-areas:
+          ". title title ."
+          ". header header ."
+          ". sidebar content ."
+          ". footer footer .";
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+<div class="grid">
+  <div class="title">Title</div>
+  <div class="header">Header</div>
+  <div class="sidebar">Sidebar</div>
+  <div class="content">Content</div>
+  <div class="footer">Footer</div>
+</div>
+
+
+  </body>
+</html>
