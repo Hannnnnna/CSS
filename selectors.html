@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    #container > ul {
+  	border : 1px dotted blue;  /* #container 요소의 자식 ul 요소에 파란 1px 실선 */
+    }
+
+    h1+p{
+      color:red;
+      font-weight:bold;
+    }
+
+    .attr1 > ul{
+      list-style:none;
+    }
+    .attr1 li{
+      display:inline-block;
+    }
+    .attr1 a{
+      color:blue;
+      padding: 5px 20px;
+      font-size:15px;
+      text-decoration:none;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+    .attr1 a[href]{  /*css 속성 선택자 []*/
+      background:yellow;
+    }
+
+  .attr2{
+    a[target="_blank"]{
+      padding-right:30px;
+      background:url() no-repeat center right;
+      display:none;
+    }
+
+   .attr2 a{
+      list-style:none;
+   }
+
+    /* Q. sibling 선택자 (+ ~) 적용이 안되는 이유*/
+</style>
+  </head>
+  <body>
+    <section id="container">
+      <header><h1>예약 방법 및 요금</h1></header>
+      <p>바베큐 예약하려면?</p>
+            <ul>
+               <li>직접 통화</li>
+               <li>문자 남기기</li>
+           </ul>
+            <ul>
+               <li>1인 : 40,000원</li>
+               <li>2인 : 60,000원</li>
+               <li>3인 : 80,000원</li>
+      	       <li>4인 : 100,000원</li>
+           </ul>
+    </section>
+
+<p>부모 선택자 > 하위(자식)선택자 > (부모의)손자 선택자</p>
+<p>같은 부모 요소를 가지는 요소들을 형제 관계라고 부르고 먼저 나오는 요소='형요소', 나중에 나오는 요소='동생요소'</p>
+<br>
+<div class="attr1">
+  <ul>
+      <li><a>메인메뉴</a></li>
+      <li><a href="#">메뉴1</a></li>
+      <li><a href="#">메뉴2</a></li>
+      <li><a href="#" class="button">메뉴3</a></li>
+      <li><a href="#" class="flat button">메뉴4</a></li>
+  </ul>
+</div>
+<br>
+<div class="attr2">
+  <h1>[속성 = 값] 선택자</h1>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=IquLSZDz-hQ" target="_blank">POP SONG</a></li>
+    <li><a href="https://www.youtube.com/watch?v=GbUlWapHAuI">BTS</a></li>
+    <li><a href="https://www.youtube.com/watch?v=GbUlWapHAuI">PIANO MUSIC</a></li>
+  </ul>
+</div>
+
+
+  </body>
+</html>

@@ -1,0 +1,89 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+
+    .attr3 > ul{
+      list-style:none;
+    }
+    .attr3 li{
+      display:inline-block;
+    }
+    .attr3 a{
+      color:blue;
+      padding: 5px 20px;
+      font-size:15px;
+      text-decoration:none;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+
+
+   [class~="button"]{
+     border: 2px solid black;
+     box-shadow: rgba(0,0,0,0,4) 5px 5px;
+   }
+
+   .flat{
+     background:blue;
+     color:white;
+   }
+   .attr4 ul{
+     list-style:none;
+     text-decoration:none;
+   }
+   .attr4 a{
+     text-decoration:none;
+   }
+   .attr4 li{
+     display:inline-block;
+   }
+   a[title |="us"]{
+     color:pink;
+     padding:20px;
+   }
+   .attr5 ul{
+     list-style:none;
+   }
+   .attr5 a{
+     text-decoration:none;
+   }
+   a[href $="hwp"]{
+     background:red;
+   }
+   a[href $="xls"]{
+    background:yellow;
+   }
+</style>
+  </head>
+  <body>
+<div class="attr3">
+  <ul>
+      <li><a>메인메뉴</a></li>
+      <li><a href="#">메뉴1</a></li>
+      <li><a href="#">메뉴2</a></li>
+      <li><a href="#" class="button">메뉴3</a></li>
+      <li><a href="#" class="flat button">메뉴4</a></li>
+  </ul>
+</div>
+<br>
+<div class="attr4">
+  <ul>
+    <li>외국어 서비스</li>
+    <li><a href="#" title="us">영어</a></li>
+    <li><a href="#" title="us-english">영어</a></li>
+    <li><a href="#" title="spanish">스페인어</a></li>
+  </ul>
+</div>
+<br>
+<div class="attr5">
+  <h3>여름이네</h3>
+  <ul>
+    <li><a href="intro.hwp">hwp 파일</a></li>
+    <li><a href="intro.xls">엑셀 파일</a></li>
+  </ul>
+</div>
+</body>
+</html>
