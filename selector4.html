@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      ul{
+        list-style:none;
+      }
+      input:disabled{
+        background:#A1C8B0;
+        border: 1px solid #ccc;
+      }
+      input:checked + span{
+        color:red;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>회원 정보</legend>
+      <ul>
+        <li><label>이름<input type="text" size="5px" disabled></label></li>
+        <li><label>전화번호<input type="text" size="10px" disabled></label></li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>사이즈 선택</legend>
+      <p>사이즈 상세 정보는 상세 페이지에서 확인 가능</p>
+      <label><input type="checkbox" name="s" value=""><span>S</span></label>
+      <label><input type="checkbox" name="m" value=""><span>M</span></label>
+      <label><input type="checkbox" name="l" value=""><span>L</span></label>
+    </fieldset>
+
+  </body>
+</html>

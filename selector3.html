@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style media="screen">
+    .pseudo{
+        border: 2px solid #ccc;
+        padding:0;
+      }
+    a{
+      font-size:large;
+      text-decoration:none;
+    }
+    li{
+      display:inline-block;
+      padding:20px;
+    }
+    .pseudo a:link{
+      color:black;
+    }
+    .pseudo a:visited{
+      color:#1FDE7A;
+    }
+    .pseudo a:hover{
+      background-color:#222;
+      color:#fff;
+    }
+    </style>
+  </head>
+  <body>
+<!--:link-:visited-:hover-:active 순서대로 정의해야지 순서가 바뀌면 제대로 적용되지 않음-->
+<div class="pseudo">
+  <ol>
+    <li><a href="https://www.youtube.com/watch?v=MQpvtwgLMPo" target="_blank">jacket</a></li>
+    <li><a href="https://www.youtube.com/watch?v=eylcZr7o0zs" target="_blank">top</a></li>
+    <li><a href="https://www.youtube.com/watch?v=nSYLImISaG0" target="_blank">bottom</a></li>
+    <li><a href="https://www.youtube.com/watch?v=fBVtXuA-xB8" target="_blank">acc</a></li>
+  </ol>
+</div>
+  </body>
+</html>
