@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .origin, .origin1, .origin2, .origin3, .origin4, .origin5, #no-pers, #pers{
+        display:inline-block;
+      }
+      .origin2{
+        perspective: 200px;
+      }
+      .movex:hover{transform: translateX(50px);}
+      .movey:hover{transform: translateY(20px);}
+      .movexy:hover{transform: translate(20px,30px);}
+      /*.movex:hover{transform: scaleX(50px);}
+      .movey:hover{transform: scaleY(20px);}
+      .movexy:hover{transform: scale(10px, 20px);}*/
+
+      /*.movex:hover{transform: rotateX(30deg);}
+      .movey:hover{transform: rotateY(20deg;}
+      .movexy:hover{transform: rotate(80deg);}*/
+      .scalex:hover{transform: scaleX(1.2);}
+      .scaley:hover{transform: scaleY(1.5);}
+      .scale:hover{transform: scale(2);}
+
+      .rotatex:hover{transform:rotateX(45deg);}
+      .rotatey:hover{transform:rotateY(45deg);}
+      .rotatez:hover{transform:rotateZ(45deg);}
+      .rotatexy:hover{transform:rotate3d(2.5, 1.2, -1.5, 45deg);}
+
+      .skewx:hover{transform:skewX(80deg);}
+      .skewy:hover{transform:skewY(45deg);}
+      .skewxy:hover{transform:skew(-45deg, -15deg);}
+
+      .rose{transform: rotateZ(10deg);}
+      .ltop .rose{transform-origin: left top; }
+      .rtop .rose{transform-origin: right top;}
+      .lbottom .rose{transform-origin: left bottom;}
+      .rbottom .rose{transform-origin: right bottom;}
+
+      .rotatex1 img{transform:rotateX(50deg);}
+      #pers {perspective: 400px;}
+      </style>
+  </head>
+  <body>
+<div class="origin">
+  <div class="movex"><img src="car.jpg" width="400px"></div>
+</div>
+<div class="origin">
+  <div class="movey"><img src="car.jpg" width="400px"></div>
+</div>
+<div class="origin">
+  <div class="movexy"><img src="car.jpg" width="400px"></div>
+</div>
+
+<div class="origin2">
+  <div class="scalex"><img src="apple.jpg" width="400px"></div>
+</div>
+<div class="origin2">
+  <div class="scaley"><img src="apple.jpg" width="400px"></div>
+</div>
+<div class="origin2">
+  <div class="scale"><img src="apple.jpg" width="400px"></div>
+</div>
+
+<div class="origin3">
+  <div class="rotatex"><img src="banana.jpg" width="300px"></div>
+</div>
+<div class="origin3">
+  <div class="rotatey"><img src="banana.jpg" width="300px"></div>
+</div>
+<div class="origin3">
+  <div class="rotatez"><img src="banana.jpg" width="300px"></div>
+</div>
+<div class="origin3">
+  <div class="rotatexy"><img src="banana.jpg" width="300px"></div>
+</div>
+
+<div class="origin4">
+  <div class="skewx"><img src="rose.jpg" width="400px"></div>
+</div>
+<div class="origin4">
+  <div class="skewy"><img src="rose.jpg" width="400px"></div>
+</div>
+<div class="origin4">
+  <div class="skewxy"><img src="rose.jpg" width="400px"></div>
+</div>
+
+<div class="origin5">
+  <div class="ltop"><img src="brose.jpg" width="300px" class="rose"></div>
+</div>
+<div class="origin5">
+  <div class="rtop"><img src="brose.jpg" width="300px" class="rose"></div>
+</div>
+<div class="origin5">
+  <div class="lbottom"><img src="brose.jpg" width="300px" class="rose"></div>
+</div>
+<div class="origin5">
+  <div class="rbottom"><img src="brose.jpg" width="300px" class="rose"></div>
+</div>
+
+<div id="no-pers">
+  <div class="rotatex1"><img src="sunset.jpg" width="300px"></div>
+</div>
+<div id="pers">
+  <div class="rotatex1"><img src="sunset.jpg" width="300px"></div>
+</div>
+</body>
+</html>
