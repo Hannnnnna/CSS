@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+      /*해결하지 못한 것 : hover했을 때 opacity 되는 부분이 img 보다 조금 아래 쪽으로 더 나오는데 딱 맞게 하는 방법과 왜 그러는지 이유를 모르겠음 = 해답: li 와 img 둘 중 하나에 float 을 설정하지 않아서*/
+      .pro-list{
+        list-style:none;
+        margin:0;
+        padding:0;
+      }
+      .pro-list li{
+        position:relative;
+        float:left;
+        padding:0;
+        margin:10px;
+        overflow:hidden;
+      }
+      .pro-list img{
+        margin:0;
+        padding:0;
+        float:left;
+        z-index:5;
+      }
+      .caption{
+        position: absolute;
+        top:200px;
+        width:300px;
+        height:200px;
+        padding-top:20px;
+        background: rgba(0,0,0,0.6);
+        opacity:0;
+        transition: all 0.2s ease-in-out;
+        z-index:10;
+    }
+    li:hover .caption{
+      opacity: 5;
+      transform: translateY(-200px);
+    }
+     .caption {
+      color: #fff;
+      text-align:center;
+      font-style:italic;
+    }
+    </style>
+  </head>
+  <body>
+    <h1><b>Start Your Morning With Us</b></h1>
+<div id="container">
+  <ul class="pro-list">
+    <li>
+  <img src="starbucks.jpg">
+  <div class="caption">
+    <h1>Americano</h1>
+    <p>HOT/COLD</p>
+    <p>$2.75</p>
+  </div>
+    </li>
+    <li>
+      <img src="starbucks3.jpg">
+      <div class="caption">
+        <h1>Today's coffee</h1>
+        <p>HOT/COLD</p>
+        <p>$1.89</p>
+      </div>
+    </li>
+    <li>
+      <img src="starbucks2.jpg">
+      <div class="caption">
+        <h1>STARBUCKS</h1>
+        <p>welcome</p>
+      </div>
+    </li>
+  </ul>
+</div>
+  </body>
+</html>
