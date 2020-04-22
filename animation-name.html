@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div{
+        width:100px;
+        height:100px;
+        float:left;
+        margin: 50px;
+      }
+      #sq{
+        background:#95BE7C;
+        animation-name:circle;
+        animation-duration:3s;
+      }
+      #cir{
+        background:#E2B3FF;
+        animation-name: rotate;
+        animation-duration:3s;
+      @keyframes circle{
+        from{
+          border: 1px solid black;
+        }
+        to{
+          border-radius:50%;
+        }
+      }
+      @keyframes rotate{
+        from{
+          transform:rotate(0deg);
+        }
+        to{
+          transform:rotate(30deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+      <div id="sq"></div>
+      <div id="cir"></div>
+  </body>
+</html>

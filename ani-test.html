@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .test{
+        width:100px;
+        height:100px;
+        margin:100px;
+        animation: test 3s infinite alternate;
+      }
+      @keyframes test{
+        from{
+          background: pink;
+          transform: rotate(0deg);
+        }
+        to{
+          background:skyblue;
+          transform: rotate(80deg);
+          border-radius:40%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="test"></div>
+  </body>
+</html>

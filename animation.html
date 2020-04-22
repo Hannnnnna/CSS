@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .box{
+        width:60px;
+        height:60px;
+        margin:60px;
+        animation: rotate 1.5s infinite, background 1.5s infinite alternate;
+      }
+      @keyframes rotate {
+        from{transform: rotateX(0deg) rotateY(0deg);}
+        50%{transform: rotateX(-180deg) rotateY(0deg);}
+        to {transform: rotateX(-180deg) rotateY(-180deg);}
+      }
+      @keyframes background {
+        from{background:red;}
+        50%{background:orange;}
+        to {background:green;}
+      }
+    </style>
+  </head>
+  <body>
+<div class="box"></div>
+  </body>
+</html>
