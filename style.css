@@ -2,6 +2,7 @@ html {
   margin: 0;
   padding: 0;
   width: 100%;
+  font-size: 100
 }
 body {
   margin: 0;
@@ -26,6 +27,7 @@ li {
 a {
   text-decoration: none;
   color: #fff;
+  font-size: 1rem;
   font-family: Sans-serif;
   text-transform: uppercase;
   padding: 16px 40px;
@@ -48,7 +50,7 @@ a {
 .header h1 {
     color: #fff;
     font-family: fantasy;
-    font-size: 40px;
+    font-size:3rem;
     font-weight: lighter;
     text-transform: uppercase;
 }
@@ -69,7 +71,7 @@ button {
   background: rgba(0,0,0,0);
   color: #fff;
   transition: .3s;
-  font-size: 18px;
+  font-size: 1.2rem;
   border: 1px solid #fff;
 }
 
