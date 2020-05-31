@@ -1,0 +1,217 @@
+:root {
+    /* Color */
+    --white-color: #fff;
+    --black-color: #333;
+  
+    /* Size */
+    --padding: 12px;
+    --icon-size: 36px;
+  
+    /* Font Size */
+    --font-logo: 2rem;
+    --font-clock: 10rem;
+    --font-large: 2.8rem;
+    --font-medium: 1rem;
+    --font-small: 0.7rem;
+    --font-micro: 10px;
+    --font-icon-size: 16px;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-size: 10px;
+    font-family: 'Roboto';
+    background: url(images/hollywood.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .1);
+} 
+
+
+/* Widget */
+
+a {
+    opacity: 0.5;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.25s ease-out;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+/* Header */
+
+header {
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--padding);
+    z-index: 100;
+}
+
+header .top-left {
+    display: flex;
+    align-items: center;
+}
+
+.widget-header .top-left i {
+    color: var(--white-color);
+    font-size: var(--font-logo);
+    padding: var(--padding);
+}
+
+.widget-header .top-left .nav-list a {
+    color: var(--white-color);
+    font-size: var(--font-medium);
+    padding: var(--padding);
+}
+
+.widget-header .top-right .browserInfo a {
+    color: var(--white-color);
+    font-size: var(--font-medium);
+    padding: var(--padding);
+}
+
+.widget-header .top-right .browserInfo i {
+    padding-right: calc(var(--padding)/ 2.7)
+}
+
+/* Center Clock */
+
+/*Another way to center Clock*/
+
+.widget-above {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+.center-clock span{
+    display: block;
+}
+
+.widget-above .center-clock h1 {
+    color: var(--white-color);
+    font-size: var(--font-clock);
+    font-weight: 500;
+    text-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.widget-above .center-quote h2 {
+    color: var(--white-color);
+    font-size: var(--font-large);
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Center Button */
+
+.btn {
+    margin-top: 2rem;
+}
+
+.btn button {
+    width: 18rem;
+    height: 4rem;
+    background-color: rgb(248,246,248);
+    border: none;
+    border-radius: 0.3rem;
+    text-align: center;
+    letter-spacing: .1rem;
+    margin-top: 2rem;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.btn i {
+    font-size: 1.2rem;
+    padding-right: var(--padding);
+}
+
+.btn span {
+    font-size: 1.3rem;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    transition: ease-in-out 0.4s;
+}
+
+
+/* Widget Below */
+
+
+.bottom .bottom-right {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.bottom .bottom-right a {
+    color: white;
+    font-size: var(--font-small);
+    padding: calc(var(--padding) / 2);
+}
+
+.bottom .bottom-right a i {
+    color: white;
+    font-size: var(--font-medium);
+}
+
+
+@media screen and (max-width: 700px){
+    .top-right{
+        display: none;
+    }
+
+    .widget-above .center-clock h1 {
+        font-size: 6rem;
+    }
+    .widget-above .center-quote h2 {
+        font-size: 1.7rem;
+    }  
+
+    .btn button {
+        width: 16rem;
+        height: 2.8rem;
+    }
+    .btn button span {
+        font-size: 0.9rem;
+    }
+    /* .bottom-right {
+        justify-content: center;
+    }
+    .widget-header .top-left .nav-list {
+        flex-direction: row-reverse;
+    } */
+
+}
